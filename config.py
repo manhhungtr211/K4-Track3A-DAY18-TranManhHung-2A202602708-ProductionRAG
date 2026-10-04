@@ -5,8 +5,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- API Keys ---
+# --- API Keys & LLM ---
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
+LLM_MODEL = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b:free")
 
 # --- Qdrant ---
 QDRANT_HOST = "localhost"
